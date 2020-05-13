@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haushaltshilfe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Haushaltshilfe.js"></script>
+</head>
+<body>
+  <header>
+      <h1>Haushaltshilfe</h1>
+  </header>  
+
+<form>
+    <div id="form">
+        <h2>Hier wählen</h2>
+        <fieldset id="field1">
+            <legend>Einkaufen</legend>
+            <input type="checkbox" name="Artikel" id="Schokolade" value="Schokolade" price="1.50" einheit="Laib">
+            <label for="brot">Schokolade</label> <br> <br>
+            <input type="checkbox" name="Artikel" id="Tomaten" value="Tomaten" price="0.80" einheit="kg">
+            <label for="mehl">Tomaten</label> <br> <br>
+            <input type="checkbox" name="Artikel" id="wischmop" value="Wischmop" price="5.00" einheit="Stück">
+            <label for="wischmop">Wischmop</label> <br> <br>
+            <input type="checkbox" name="Artikel" id="wasser" value="Wasser" price="0.60" einheit="Liter">
+            <label for="wasser">Wasser</label> <br> <br>
+            <input type="checkbox" name="Artikel" id="fleisch" value="Fleisch" price="0.01" einheit="gramm">
+            <label for="fleisch">Hackfleisch</label>
+            
+            <span id="menge">
+                <input type="number" name="SchokoladeMenge" step="1" min="0" max="1000" value="0"> <br> <br>
+                <input type="number" name="TomatenMenge" step="1" min="0" max="1000" value="0"> <br> <br>
+                <input type="number" name="WischmopMenge" step="1" min="0" max="1000" value="0"> <br> <br>
+                <input type="number" name="WasserMenge" step="1" min="0" max="1000" value="0"> <br> <br>
+                <input type="number" name="FleischMenge" step="20" min="0" max="1000" value="0"> <br> <br>
+                
+            </span>
+
+            <span id="auswahlsupermarkt">
+                <select name="Supermarkt" id="supermarkt1">
+                    <option value="--" >Supermarkt wählen</option>   
+                    <option value="REAL">REAL</option> 
+                    <option value="ACTION">ACTION</option>
+                    <option value="ALDI">ALDI</option>
+                    <option value="LIDL">LIDL</option>
+                    <option value="REWE">REWE</option>
+                </select>
+               
+        
+            </span>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hausarbeiten</legend>
+        
+            <select name="Hausarbeiten" id="hausarbeiten">
+                <option value="" disabled selected hidden>Hausarbeit wählen</option>
+                <option value="Rasen mähen" price="10.00">Rasen mähen</option>
+                <option value="Staubsaugen" price="5.00">Staubsaugen</option>
+                <option value="Zimmer putzen" price="10.00">Zimmer putzen</option>
+                <option value="Fenster putzen" price="15.00">Fenster putzen</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Geld</legend>
+            <input type="radio" name="Geld" id="abheben" value="Abheben">
+            <label for="abheben">Abheben</label>
+            <input type="radio" name="Geld" id="einzahlen" value="Einzahlen">
+            <label for="einzahlen">Einzahlen</label> <br> <br>
+            <input type="number" name="Betrag" step="5" min="0" max="500" value="0">
+        </fieldset>
+
+    
+
+        <fieldset>
+            <legend>Zahlungsmethode</legend>
+            <input type="radio" name="Zahlung" id="bar" value="Bar">
+            <label for="bar">Bar</label>
+            <input type="radio" name="Zahlung" id="bankeinzug" value="Bankeinzug">
+            <label for="bankeinzug">Bankeinzug</label>
+            <input type="radio" name="Zahlung" id="ueberweisung" value="Überweisung">
+            <label for="ueberweisung">Überweisung</label>
+        </fieldset>
+    </div>
+
+</form>
+
+<div id="bestellung">
+    <h2>Ihre Bestellung</h2>
+    <div id="order"> 
+       ... 
+    </div>
+    <button id="button">Bestätigen</button>
+</div>
+</body>
+</html>
