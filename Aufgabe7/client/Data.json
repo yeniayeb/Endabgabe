@@ -1,0 +1,58 @@
+{
+    
+  "Artikel": [
+      {"name": "schokolade", "price": 2.00, "einheit": "Laib"},
+      {"name": "tomaten", "price": 0.80, "einheit": "kg"},
+      {"name": "eis", "price": 5.00, "einheit": "Stück"},
+      {"name": "Wasser", "price": 0.60, "einheit": "Liter"},
+      {"name": "hackfleisch", "price": 0.01, "einheit": "gramm"}
+  ],
+
+ "Supermarkt": [
+  {"name": "--", "price": 0, "einheit": ""},
+  {"name": "rewe", "price": 0, "einheit": ""},
+  {"name": "Aldi", "price": 0, "einheit": ""},
+  {"name": "real", "price": 0, "einheit": ""},
+ 
+
+
+  ],
+
+  "Geld": [
+    {"name": "--", "price": 0, "einheit": ""},
+    {"name": "abheben", "price": 0, "einheit": ""},
+    {"name": "einzahlen", "price": 0, "einheit": ""}
+
+   
+  
+  
+    ],
+
+  "Hausarbeiten": [
+      {"name": "--", "price": 0, "einheit": ""},
+      {"name": "putzen", "price": 1.50, "einheit": ""},
+      {"name": "staubsaugen", "price": 15.00, "einheit": ""},
+      {"name": "wischmop", "price": 5.00, "einheit": ""},
+      {"name": "staubwischen", "price": 20.00, "einheit": ""}
+      {"name": "nass wischen", "price": 30.00, "einheit": ""}
+  ],
+
+  "Zahlungsmethode": [
+      {"name": "Bar", "price": 0, "einheit": ""},
+      {"name": "rechnung", "price": 0, "einheit": ""},
+      {"name": "Überweisung", "price": 0, "einheit": ""}
+  ],
+
+  "liefermethode": [
+    {"name": "--", "price": 0, "einheit": ""},
+    {"name": "standart", "price": 1.50, "einheit": ""},
+    {"name": "eo", "price": 15.00, "einheit": ""},
+    {"name": "espress", "price": 5.00, "einheit": ""}
+    
+]
+  
+
+
+
+
+}

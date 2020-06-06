@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haushaltshilfe</title>
+    <link rel="stylesheet" href="Haushaltshilfe.css">
+    
+    <script src="GenerateContent.js"></script>
+    <script src="Haushaltshilfe7.js"></script>
+</head>
+<body>
+  <header>
+      <h1>Haushaltshilfe</h1>
+  </header>
+
+<form id="orderForm" method="GET">
+    <div id="form">
+        <h2>Hier wählen</h2>
+        <fieldset id="Artikel">
+            <legend>Einkaufen</legend>
+            <input type="checkbox" name="Artikel" id="Schokolade" value="Schokolade" price="1.00" einheit="Laib">
+            <label for="brot">Schokolade</label> <br> <br>
+            <input type="checkbox" name="Artikel" id="Tomaten" value="Tomaten" price="0.80" einheit="kg">
+            <label for="mehl">Tomaten</label> <br> <br>
+            <input type="checkbox" name="Artikel" id="eis" value="eis" price="5.00" einheit="Stück">
+            <label for="wischmop">Eis</label> <br> <br>
+            <input type="checkbox" name="Artikel" id="wasser" value="Wasser" price="0.60" einheit="Liter">
+            <label for="wasser">Wasser</label> <br> <br>
+            <input type="checkbox" name="Artikel" id="fleisch" value="Fleisch" price="0.01" einheit="gramm">
+            <label for="fleisch">Hackfleisch</label>
+            
+            <span id="menge">
+                <input type="number" name="SchokoladeMenge" step="1" min="0" max="1000" value="0"> <br> <br>
+                <input type="number" name="TomatenMenge" step="1" min="0" max="1000" value="0"> <br> <br>
+                <input type="number" name="EisMenge" step="1" min="0" max="1000" value="0"> <br> <br>
+                <input type="number" name="WasserMenge" step="1" min="0" max="1000" value="0"> <br> <br>
+                <input type="number" name="FleischMenge" step="20" min="0" max="1000" value="0"> <br> <br>
+                </select>
+            </span>
+        </fieldset>
+
+
+        <fieldset id="Supermarkt">
+            <legend>Supermarkt</legend>
+            <input type="radio" name="Supermarkt" id="REWE" value="REWE">
+            <label for="rewe">Rewe</label>
+            <input type="radio" name="Supermarkt" id="ALDI" value="ALDI">
+            <label for="aldi">Aldi</label> 
+            <input type="radio" name="Supermarkt" id="REAL" value="REAL">
+            <label for="real">Real</label> <br> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Geld</legend>
+            <input type="radio" name="Geld" id="abheben" value="Abheben">
+            <label for="abheben">Abheben</label>
+            <input type="radio" name="Geld" id="einzahlen" value="Einzahlen">
+            <label for="einzahlen">Einzahlen</label> <br> <br>
+            <input type="number" name="Betrag" step="5" min="0" max="500" value="0">
+        </fieldset>
+
+        <fieldset id="Hausarbeiten" >
+            <legend>Hausarbeiten</legend>
+            <input type="checkbox" name="Hausarbeiten" id="putzen" value="putzen" price="1.50" einheit="putzen">
+            <label for="brot">putzen</label> <br> <br>
+            <input type="checkbox" name="Hausarbeiten" id="staubsaugen" value="staubsaugen" price="15.00" einheit="staubsaugen">
+            <label for="mehl">staubsaugen</label> <br> <br>
+            <input type="checkbox" name="Hausarbeiten" id="wischmop" value="Wischmop" price="5.00" einheit="wischmop">
+            <label for="wischmop">Wischmop</label> <br> <br>
+            <input type="checkbox" name="Hausarbeiten" id="staubwischen" value="staubwischen" price="20.00" einheit="staubwischen">
+            <label for="wasser">staubwischen</label> <br> <br>
+            <input type="checkbox" name="Hausarbeiten" id="nass wischen" value="nass wischen" price="30.00" einheit="nass wischen">
+            <label for="fleisch">nass wischen</label>
+            
+            <span id="menge">
+                <input type="number" name="putzen" step="1" min="0" max="1000" value="0"> <br> <br>
+                <input type="number" name="staubsuagen" step="1" min="0" max="1000" value="0"> <br> <br>
+                <input type="number" name="Wischmop" step="1" min="0" max="1000" value="0"> <br> <br>
+                <input type="number" name="staubwischen" step="1" min="0" max="1000" value="0"> <br> <br>
+                <input type="number" name="nass wischen" step="20" min="0" max="1000" value="0"> <br> <br>
+                
+            </span>
+
+
+            
+            </select>
+        </fieldset>
+
+        <fieldset id="Zahlung">
+            <legend>Zahlungsmethode</legend>
+          
+            <input type="radio" name="Zahlungsmethode" id="bar" value="bar">
+            <label for="bar">bar</label>
+            <input type="radio" name="Zahlungsmethode" id="rechnung" value="rechnung">
+            <label for="rechnung">Rechnung</label> 
+            <input type="radio" name="Zahlungsmethode" id="überweisung" value="überweisung">
+            <label for="überweisung">Überweisung</label> <br> <br>
+            
+        </fieldset>
+
+
+            
+
+        <fieldset id="liefermethode">
+            <legend>Liefermethode</legend>
+            <input type="checkbox" name="liefermethode" id="standart" value="standart" price="1.50" einheit="Laib">
+            <label for="brot">standart</label> <br> <br>
+            <input type="checkbox" name="liefermethode" id="eco" value="eco" price="0.80" einheit="kg">
+            <label for="mehl">eco</label> <br> <br>
+            <input type="checkbox" name="liefermethode" id="express" value="express" price="5.00" einheit="Stück">
+            <label for="wischmop">express</label> <br> <br>
+            
+            
+            <span id="menge">
+                <input type="number" name="standart" step="1" min="0" max="1000" value="0"> <br> <br>
+                <input type="number" name="eco" step="1" min="0" max="1000" value="0"> <br> <br>
+                <input type="number" name="express" step="1" min="0" max="1000" value="0"> <br> <br>
+                
+                
+            </span>
+
+
+
+    </div>
+
+</form>
+
+<div id="bestellung">
+    <h2>Ihre Bestellung</h2>
+    <div id="order"> 
+       ... 
+    </div>
+    <button id="buttonreset" type="reset" form="orderForm" >Reset</button>
+    <button id="button" type="button" form="orderForm" >Bestätigen</button>
+    
+</div>
+</body>
+</html>
