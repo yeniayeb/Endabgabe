@@ -23,11 +23,8 @@ class Routes {
         api.route('/rockets')
             .get(this.fireworkHandler.getAll);
         // POST endpoint
-        api.route('/rockets').post((req, res, next) => {
-            console.log(`Request from: ${JSON.stringify(req.body)}`);
-            next();
-        }, this.fireworkHandler.create);
-        // Contact detail
+        api.route('/rockets').post(this.fireworkHandler.create);
+        // rocket detail
         api.route('/rocket/:rocketId')
             //by calling DELETE /api/rocket/rocketid, call function delete
             .delete(this.fireworkHandler.delete);
