@@ -9,9 +9,9 @@ import * as mongoose from "mongoose";
     //create the routes like /api/rockets
     public routes: Routes = new Routes();
     //local mongodb url
-    public localMongoUrl: string = 'mongodb://127.0.0.1:27017/firework';
+    public localMongoUrl: string = 'mongodb://127.0.0.1:27017/EIA2';
     //remote mongodb url
-    public remoteMongoUrl: string = "mongodb+srv://burak:burak@firework.fxgkf.mongodb.net/firework?retryWrites=true&w=majority";
+    public remoteMongoUrl: string = "mongodb+srv://Ebru:14721661996@eia2.b7rlj.mongodb.net/EIA2?retryWrites=true&w=majority";
     // variable holding the parameter from  npm start if the database url should be remote or local
     public isRemote: boolean;
 
