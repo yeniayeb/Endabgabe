@@ -5,7 +5,7 @@
   "main": "server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "EIA 2 ENDABGABE/firework-backend2/build/server.js"
+    "start": "EIA 2 ENDABGABE/firework-backend2/build/server.js remote"
   },
   "author": "",
   "license": "ISC",
