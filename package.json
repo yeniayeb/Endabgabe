@@ -1,5 +1,5 @@
 {
-  "name": "firework-backend",
+  "name": "firework-rockets-backend",
   "version": "1.0.0",
   "description": "backend for firework",
   "main": "server.ts",
