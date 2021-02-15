@@ -11,7 +11,7 @@ import * as mongoose from "mongoose";
     //local mongodb url
     public localMongoUrl: string = 'mongodb://127.0.0.1:27017/EIA2';
     //remote mongodb url
-    public remoteMongoUrl: string = "mongodb+srv://ebruyny:<Carwash1996.>@cluster0.q936a.mongodb.net/<firework>?retryWrites=true&w=majority";
+    public remoteMongoUrl: string = "mongodb+srv://ebruyny:Carwash1996.@cluster0.q936a.mongodb.net/firework?retryWrites=true&w=majority";
     // variable holding the parameter from  npm start if the database url should be remote or local
     public isRemote: boolean;
 
